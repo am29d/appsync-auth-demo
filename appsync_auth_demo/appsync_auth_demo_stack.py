@@ -4,9 +4,7 @@ from aws_cdk.aws_appsync import AuthorizationConfig, AuthorizationMode, Authoriz
   LambdaAuthorizerConfig, Resolver
 from aws_cdk.aws_iam import ManagedPolicy, Role, ServicePrincipal
 from aws_cdk.aws_lambda import Code, Function, LayerVersion, Runtime, Tracing
-from aws_cdk.aws_logs import LogGroup, RetentionDays
 from constructs import Construct
-from typing_extensions import runtime
 
 
 class AppsyncAuthDemoStack(Stack):

@@ -1,7 +1,6 @@
 import hashlib
 import uuid
 from typing import List
-from uuid import uuid5
 
 from aws_lambda_powertools import Logger, Tracer
 from aws_lambda_powertools.event_handler import AppSyncResolver
@@ -73,9 +72,7 @@ app = AppSyncResolver()
 
 
 def generate_id():
-  # Generate a random UUID
   random_uuid = uuid.uuid4()
-  # Hash the UUID using SHA-256 and take the first 8 characters
   hash_object = hashlib.sha256(random_uuid.bytes)
   return hash_object.hexdigest()[:8]
 
