@@ -1,0 +1,5 @@
+pytest==6.2.5
+gql==3.5.0
+requests
+requests_toolbelt
+faker
